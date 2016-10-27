@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="win.zqxu.replacexlipse.feature"
+      label="ReplaceXlipse Plug-in"
+      version="1.0.0">
+
+   <description url="http://www.zqxu.win/replacexlipse/description">
+      Enhaned Replacement Plug-in for Eclipse
+   </description>
+
+   <copyright url="http://www.zqxu.win/replacexlipse/copyright">
+      [在此处输入版权描述。]
+   </copyright>
+
+   <license url="http://www.eclipse.org/org/documents/epl-v10.php">
+      Eclipse Public License - v 1.0
+
+Please see http://www.eclipse.org/org/documents/epl-v10.php
+   </license>
+
+   <plugin
+         id="win.zqxu.replacexlipse"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

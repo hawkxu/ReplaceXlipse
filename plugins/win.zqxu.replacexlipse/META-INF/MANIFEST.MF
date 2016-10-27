@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ReplaceXlipse
+Bundle-SymbolicName: win.zqxu.replacexlipse;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: zqxu.win
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.ui.editors,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.jface.text
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
