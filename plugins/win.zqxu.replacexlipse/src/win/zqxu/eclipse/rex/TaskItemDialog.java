@@ -187,6 +187,7 @@ public class TaskItemDialog extends Dialog implements Constants {
       getShell().setImage(ResourceManager.getPluginImage(symbolicName, "icons/style_edit.png")); //$NON-NLS-1$
     }
     handleSearchModified();
+    handleCharCaseSelected(null);
   }
 
   @Override

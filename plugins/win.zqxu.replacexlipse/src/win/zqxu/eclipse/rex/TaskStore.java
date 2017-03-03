@@ -142,15 +142,10 @@ public class TaskStore implements Constants {
   }
 
   private static void moveChild(NodeList nodeList, int fromIndex, int toIndex) {
-    int smallIndex = Math.min(fromIndex, toIndex);
-    int largeIndex = Math.max(fromIndex, toIndex);
-    Node smallNode = nodeList.item(smallIndex);
-    Node largeNode = nodeList.item(largeIndex);
-    Node referNode = largeNode.getNextSibling();
-    Element parentNode = (Element) largeNode.getParentNode();
-    parentNode.removeChild(largeNode);
-    parentNode.insertBefore(largeNode, smallNode);
-    parentNode.insertBefore(smallNode, referNode);
+    Node moving = nodeList.item(fromIndex);
+    Element parent = (Element) moving.getParentNode();
+    parent.removeChild(moving);
+    parent.insertBefore(moving, nodeList.item(toIndex));
   }
 
   private static void saveStore(Document document) throws Exception {
